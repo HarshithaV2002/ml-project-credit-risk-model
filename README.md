@@ -5,13 +5,13 @@ The app takes user inputs (like income, loan details, and credit utilization) an
 It also features an interactive Streamlit web interface for real-time prediction and visualization.
 
 # Features
--**Predicts credit default probability, credit score, and rating based on user financial inputs.**
--**Modern Streamlit web UI with a clean white–yellow theme for professional presentation.**
--**Input features include:**
-    -**Financial: Income, Loan Amount, Loan Tenure, Loan-to-Income Ratio**
-    -**Credit Behavior: Delinquency Ratio, Avg DPD, Credit Utilization Ratio, Open Loan Accounts**
-    -**Demographic & Loan Info: Age, Residence Type, Loan Purpose, Loan Type**
--**Trained using multiple ML techniques — Logistic Regression, XGBoost, SMOTETomek for data balancing, and optimized with Optuna and Bayesian Optimization for best model performance.**
+- **Predicts credit default probability, credit score, and rating based on user financial inputs.**
+- **Modern Streamlit web UI with a clean white–yellow theme for professional presentation.**
+- **Input features include:**
+    - **Financial: Income, Loan Amount, Loan Tenure, Loan-to-Income Ratio**
+    - **Credit Behavior: Delinquency Ratio, Avg DPD, Credit Utilization Ratio, Open Loan Accounts**
+    - **Demographic & Loan Info: Age, Residence Type, Loan Purpose, Loan Type**
+- **Trained using multiple ML techniques — Logistic Regression, XGBoost, SMOTETomek for data balancing, and optimized with Optuna and Bayesian Optimization for best model performance.**
 
 
 ## Project Structure
