@@ -22,29 +22,28 @@ It also features an interactive Streamlit web interface for real-time prediction
 
 
 # Methodology
-1.Data Splitting and Leakage Prevention:
-The dataset was first split into training and testing sets to prevent data leakage. All preprocessing steps — such as encoding, scaling, and feature engineering — were fitted only on the training data and then applied to the test data, ensuring no information from the test set influenced model training.
+1. Data Splitting and Leakage Prevention:
+- **The dataset was first split into training and testing sets to prevent data leakage. All preprocessing steps — such as encoding, scaling, and feature engineering — were fitted only on the training data and then applied to the test data, ensuring no information from the test set influenced model training.**
 
-2.Data Preprocessing:
--**Handled missing values and removed redundant or irrelevant columns.**
--**Encoded categorical variables using Weight of Evidence (WoE) for interpretable categorical representation.**
--**Detected and reduced multicollinearity among numerical variables using Variance Inflation Factor (VIF) to retain stable and independent predictors.**
--**Scaled numerical features using MinMaxScaler to normalize feature values and maintain consistent ranges for better model convergence.**
+2. Data Preprocessing:
+- **Handled missing values and removed redundant or irrelevant columns.**
+- **Encoded categorical variables using Weight of Evidence (WoE) for interpretable categorical representation.**
+- **Detected and reduced multicollinearity among numerical variables using Variance Inflation Factor (VIF) to retain stable and independent predictors.**
+- **Scaled numerical features using MinMaxScaler to normalize feature values and maintain consistent ranges for better model convergence.**
 
-3.Feature Engineering:
-Created new informative features such as loan_to_income ratio, credit_utilization_per_income, and other derived metrics to enhance the model’s ability to capture meaningful financial patterns.
+3. Feature Engineering:
+- **Created new informative features such as loan_to_income ratio, credit_utilization_per_income, and other derived metrics to enhance the model’s ability to capture meaningful financial patterns.**
 
-4.Handling Class Imbalance:
-Applied SMOTETomek to address class imbalance by combining oversampling of the minority class and undersampling of the majority class, improving model robustness and fairness.
+4. Handling Class Imbalance:
+- **Applied SMOTETomek to address class imbalance by combining oversampling of the minority class and undersampling of the majority class, improving model robustness and fairness.**
 
-5.Model Development and Optimization:
-Trained multiple models including Logistic Regression and XGBoost.
-Performed hyperparameter tuning using Optuna, GridSearchCV, and Bayesian Optimization to achieve optimal model performance.
+5. Model Development and Optimization:
+- **Trained multiple models including Logistic Regression and XGBoost.**
+- **Performed hyperparameter tuning using Optuna, GridSearchCV, and Bayesian Optimization to achieve optimal model performance.**
 
-6.Evaluation and Explainability:
-Evaluated model performance using cross-validation and F1-score (via make_scorer(f1_score)).
-Used SHAP (SHapley Additive exPlanations) to interpret feature importance and explain model predictions, enhancing transparency and trustworthiness.
-
+6. Evaluation and Explainability:
+- **Evaluated model performance using cross-validation  F1-score etc.**
+- **Used SHAP (SHapley Additive exPlanations) to interpret feature importance and explain model predictions, enhancing transparency and trustworthiness.**
 
 
 ## Demo video
@@ -84,10 +83,10 @@ You can access the deployed application here:
 
 
 ## Future Improvement
--**Integrate real-time financial APIs for updated user data**
--**Implement Deep Learning model for further improvement**
--**Automate feature scaling and preprocessing pipeline**
--**Add PDF report generation for user predictions**
+- **Integrate real-time financial APIs for updated user data**
+- **Implement Deep Learning model for further improvement**
+- **Automate feature scaling and preprocessing pipeline**
+- **Add PDF report generation for user predictions**
 
 
 ## Conclusion
