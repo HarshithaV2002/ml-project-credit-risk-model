@@ -92,6 +92,14 @@ st.markdown("""
     .stMarkdown {
         margin-bottom: 15px !important;
     }
+     * {
+        cursor: default !important; /* makes cursor normal instead of text select */
+    }
+    input, select, textarea {
+        color: black !important;
+        caret-color: black !important; /* makes blinking cursor black */
+    }
+    
     </style>
 """, unsafe_allow_html=True)
 
